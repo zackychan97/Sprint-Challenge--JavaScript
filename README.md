@@ -29,10 +29,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+    the forEach method does not return anything while map method does. So I guess there was a really good article I read about this from codeburst, and how they made it click with me, was that they made it known that forEach is basically just taking a function you wrote and applying it on elements in an existing array, while the map also uses a function we provided. Its just that map can RETURN things and instead of applying function inside of the array [like forEach] thus altering/mutating the array, map returns a completely new array with the functions applied, and you still get your untampered array.
+
+
+
+
+
 
 2. What is the difference between a function and a method?
+    They are actually pretty similar except for just a couple differences, as they are both technically functions. Methods call on objects and are then passed them implicitly, and also that object it is calling on is where it can receive info/data from. 
+
+
 
 3. What is closure?
+    a closure controls what is in the scope for a particular function.
+
+
+
 
 4. Describe the four rules of the 'this' keyword.
 
