@@ -43,7 +43,7 @@ CuboidMaker.prototype.SA = function(){
 */
 
 const cuboid = new CuboidMaker({
-  length: 4;
+  length: 4,
   width: 5,
   height: 5
 });
