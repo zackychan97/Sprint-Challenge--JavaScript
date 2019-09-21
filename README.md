@@ -29,7 +29,7 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
-    the forEach method does not return anything while map method does. So I guess there was a really good article I read about this from codeburst, and how they made it click with me, was that they made it known that forEach is basically just taking a function you wrote and applying it on elements in an existing array, while the map also uses a function we provided. Its just that map can RETURN things and instead of applying function inside of the array [like forEach] thus altering/mutating the array, map returns a completely new array with the functions applied, and you still get your untampered array.
+    the forEach method changes the original array while map method brings us a new touched array and also returns the original, untouched array. So I guess there was a really good article I read about this from codeburst, and how they made it click with me, was that they made it known that forEach is basically just taking a function you wrote and applying it on elements in an existing array, while the map also uses a function we provided. Its just that map can RETURN things and instead of applying function inside of the array [like forEach] thus altering/mutating the array, map returns a completely new array with the functions applied, and you still get your untampered array.  T
 
 
 
@@ -45,11 +45,17 @@ Edit this document to include your answers after each question. Make sure to lea
     a closure controls what is in the scope for a particular function.
 
 
-
-
 4. Describe the four rules of the 'this' keyword.
+    explicit- if you use the this keyword explicitly you can tell it (explicitly/exactly) what to point to, aka another object
+
+    implicit- it is implied if you use a method on an object, that the context you want is bound to whatever is left of the dot
+
+    global- if you use the this keyword in the global scope it will return the window object
+
+    new- we can create our variables + assign them values with this. added to the beginning, so an example would be this.greeing = 'Hello'
 
 5. Why do we need super() in an extended class?
+    So when we need to inherit data from a parent class, we need a way of doing that, and super() gives us that ability
 
 ## Project Set up
 

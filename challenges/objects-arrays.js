@@ -9,7 +9,7 @@
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 
 const tyrannosaurus = {
-  diet: 'varnivorous',
+  diet: 'carnivorous',
   weight: '7000kg',
   length: '12m',
   period: 'Late Cretaceous'
@@ -63,7 +63,7 @@ console.log(tyrannosaurus.period);
 tyrannosaurus.battleShout = function(){
   return 'Rawr xD'
 }
-console.log(tyrannosaurus.battleShout);
+console.log(tyrannosaurus.battleShout());
 
 
 // ==== Arrays ====
@@ -139,7 +139,7 @@ The zoos want to display both the scientific name and the animal name in front o
 const displayNames = [];
 
 zooAnimals.forEach(animal => {
-  displayNames.push(`Name: ${zooAnimals.animal_name} asiatic, ${zooAnimals.scientific_name}.`)
+  displayNames.push(`Name: ${animal.animal_name} asiatic, ${animal.scientific_name}.`)
 });
 console.log(displayNames);
 
@@ -157,7 +157,7 @@ console.log(lowCaseAnimalNames);
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
-const lowPopulationAnimals = zooAnimals.filter(animal);
+const lowPopulationAnimals = zooAnimals.filter(animal => animal.population < 5);
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
